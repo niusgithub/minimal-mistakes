@@ -25,7 +25,8 @@ CAShapeLayer相比CALayer有如下优点:
 
 可以用UIBezierPath来创建图层路径，这样就不用考虑人工释放CGPath了。
 
-```Objective-C
+{% highlight css %}
+
 CGRect rect = CGRectMake(50, 400, 100, 100);
 CGSize radii = CGSizeMake(20, 20);
 UIRectCorner corners = UIRectCornerTopLeft | UIRectCornerTopRight;
@@ -41,7 +42,8 @@ shapeLayer.lineCap = kCALineCapRound;
 shapeLayer.path = path.CGPath;
 
 [self.view.layer addSublayer:shapeLayer];
-```
+
+{% endhighlight %}
 
 
 ## CATextLayer
