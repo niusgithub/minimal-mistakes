@@ -1,25 +1,10 @@
 ---
-layout: post
-title: MVVM&RAC--MVVM模式
-excerpt: "MVVM模式相关概念"
-modified: 2016-07-27
-tags: [MVVM]
-comments: true
-image:
-    feature: sample-image-3.jpg
-    credit: WeGraphics
-    creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+title: "MVVM&RAC--MVVM模式"
+tags: 
+- MVVM 
 ---
 
-<section id="table-of-contents" class="toc">
-<header>
-<h3>Overview</h3>
-</header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
+{% include toc title="MVVM模式相关概念" icon="file-text" %}
 
 # 说明
 
