@@ -25,7 +25,7 @@ CAShapeLayer相比CALayer有如下优点:
 
 可以用UIBezierPath来创建图层路径，这样就不用考虑人工释放CGPath了。
 
-{% highlight css %}
+{% highlight objc %}
 
 CGRect rect = CGRectMake(50, 400, 100, 100);
 CGSize radii = CGSizeMake(20, 20);
@@ -71,7 +71,7 @@ iOS7的实现
 
 实现一个继承子UILabel的子类，然后在该子类的实现中重写`+ layerClass`方法，用CATextLayer来替换原layer。UIView会在初始化的时候调用`+ layerClass`方法，然后根据返回值来创建宿主图层。
 
-{% highlight css %}
+{% highlight objc %}
 
 + (Class)layerClass {
     return [CATextLayer class];
