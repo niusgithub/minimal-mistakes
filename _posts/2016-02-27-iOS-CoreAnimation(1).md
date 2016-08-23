@@ -1,25 +1,13 @@
 ---
-layout: post
-title: iOS--Core Animation(1)
-excerpt: "iOS Core Animation 学习笔记"
-modified: 2016-02-27
-tags: [Core Animation, CALayer, ARC, Core Foundation]
-comments: true
-image:
-  feature: sample-image-4.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+title: "iOS--Core Animation(1)"
+tags: 
+- Core Animation 
+- CALayer 
+- ARC
+— Core Foundation
 ---
 
-<section id="table-of-contents" class="toc">
-<header>
-<h3>Overview</h3>
-</header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
+{% include toc title="Core Animation学习笔记" icon="file-text" %}
 
 整理、记录Core Animation的学习过程。Core Animation的前身叫做Layer Kit，它有着众多的特性而动画只是其中之一。
 

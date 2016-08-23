@@ -1,25 +1,12 @@
 ---
-layout: post
-title: iOS--枚举类型的使用 NS_ENUM和NS_OPTINOS
-excerpt: "使用NS_ENUM和NS_OPTINOS来定义枚举类型"
-modified: 2015-12-26
-tags: [iOS, NS_ENUM, NS_OPTIONS]
-comments: true
-image:
-  feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+title: "iOS--枚举类型的使用 NS_ENUM和NS_OPTINOS"
+tags: 
+- iOS 
+- NS_ENUM
+- NS_OPTIONS
 ---
 
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3>Overview</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
+{% include toc title="使用NS_ENUM和NS_OPTINOS来定义枚举类型" icon="file-text" %}
 	
 枚举类型在开发中经常用来表示状态／状态码和选项。
 

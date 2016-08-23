@@ -1,25 +1,11 @@
 ---
-layout: post
-title: iOS--更新Xcode后Alcartraz不兼容的解决办法
-excerpt: "Alcatraz兼容新版Xcode方法"
-modified: 2015-12-19
-tags: [Xcode, Alcartraz]
-comments: true
-image:
-  feature: sample-image-1.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+title: "iOS--更新Xcode后Alcartraz不兼容的解决办法"
+tags: 
+- Xcode 
+- Alcartraz
 ---
 
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3>Overview</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
+{% include toc title="Alcatraz兼容新版Xcode方法" icon="file-text" %}
 	
 平时开发的时候经常会用到Xcode插件，我一直用Alcatraz来管理Xcode的插件，近期Xcode经常更新每次更新完Alcartraz就无法使用。这时可以修改Alcatraz使其兼容新版本。
 

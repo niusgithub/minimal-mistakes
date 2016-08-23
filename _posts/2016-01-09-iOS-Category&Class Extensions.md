@@ -1,25 +1,12 @@
 ---
-layout: post
-title: iOS--Category & Extension
-excerpt: "categroy和extension的使用及两者的异同"
-modified: 2016-03-09
-tags: [iOS, Category, Extension]
-comments: true
-image:
-  feature: sample-image-5.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+title: "iOS--Category & Extension"
+tags: 
+- iOS 
+- Category
+- Extension
 ---
 
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3>Overview</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section><!-- /#table-of-contents -->
+{% include toc title="categroy和extension的使用及两者的异同" icon="file-text" %}
 	
 平时category用的比较多，前几天看到了一个奇怪的category，一开始认为是category，但总觉得不对啊，它怎么增加了一个变量呢，但又不是extension。后来才知道是使用runtime库的 objc_setAssociatedObject / objc_getAssociatedObject来动态生成category成员变量，本篇先复习一下category和extension的基本知识。
 
