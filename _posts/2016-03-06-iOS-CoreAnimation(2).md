@@ -14,7 +14,7 @@ tags:
 contentsSclae定义了contents的像素尺寸和视图比例的大小，其默认值为1.0。contentsScale的作用并不在于放大或缩小图层，这个属性属于支持高分辨率屏幕机制的一部分。它用来判断在绘制图层的时候应该为contents创建的空间的大小，和需要显示的图片的拉伸度(在未设置contentsGravity属性的情况下)。如果contentsScale设置为1.0，将会以每点1个像素绘制图片，如果为2.0，则会以每点2个像素绘制图片，即为Retina屏幕绘制。
 当用代码的方式来处理contents内的图片时，一定要设置contentsScale属性，以免图片在Retina屏幕上无法正确显示。
 
-{% highlight css %}
+{% highlight objc %}
 layer.contentsScale = [UIScreen mainScreen].scale;
 {% endhighlight %}
 
@@ -38,7 +38,7 @@ contentsRect有一项叫做`image sprite`(图片拼合)的用法。图片拼合�
 
 ![Link]({{ site.url }}/images/CoreAnimation_2_1.png)
 
-{% highlight css %}
+{% highlight objc %}
 - (void)addSpriteImage:(UIImage *)image
        withContentRect:(CGRect)rect
                toLayer:(CALayer *)layer {
@@ -48,7 +48,7 @@ contentsRect有一项叫做`image sprite`(图片拼合)的用法。图片拼合�
 }
 {% endhighlight %}
 
-{% highlight css %}
+{% highlight objc %}
 [self addSpriteImage:image
      withContentRect:CGRectMake(0.5,0.5,0.5,0.5)
              toLayer:self.view.layer];
@@ -60,7 +60,7 @@ contentsCenter是一个CGRect，它定义了一个固定边框和一个在图层
 
 ![contentsCenter]({{ site.url }}/images/CoreAnimation_2_2.png)
 
-{% highlight css %}
+{% highlight objc %}
 layer.contentsCenter = rect;
 {% endhighlight %}
 

@@ -31,7 +31,9 @@ CGRect rect = CGRectMake(50, 400, 100, 100);
 CGSize radii = CGSizeMake(20, 20);
 UIRectCorner corners = UIRectCornerTopLeft | UIRectCornerTopRight;
 
-UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:corners cornerRadii:radii];
+UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:rect 
+                                           byRoundingCorners:corners 
+                                                 cornerRadii:radii];
 
 CAShapeLayer *shapeLayer = [CAShapeLayer layer];
 shapeLayer.strokeColor = [UIColor orangeColor].CGColor;

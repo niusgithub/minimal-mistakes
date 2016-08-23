@@ -18,7 +18,7 @@ Objective-C作为C的超集，自然也可以通过enum关键字来定义枚举�
 
 这么做的好处就是，这些宏具备向后兼容能力(backward compatibility),如果目标平台的编译器支持新标准就用新式语法，否则用旧式。用这些宏来定义枚举类型时可以指定用于保存枚举值的底层数据类型，如
 
-{% highlight css %}
+{% highlight objc %}
 typedef NS_ENUM(NSInteger, MyState) {
     MyStateValue1,
     MyStateValue2,
@@ -29,7 +29,7 @@ typedef NS_ENUM(NSInteger, MyState) {
 ## 选项可组合的的枚举类型
 
 这种枚举类型常见于某些动画效果实现的代码和视图效果中，特点是各个选项之间可以通过`按位或操作符`来组合（｜）,例如
-{% highlight css %}
+{% highlight objc %}
 enum UIViewAutoresizing {
     UIViewAutoresizingNone                 = 0,
     UIViewAutoresizingFlexibleLeftMargin   = 1 << 0,
@@ -43,7 +43,7 @@ enum UIViewAutoresizing {
 
 相当于
 
-{% highlight css %}
+{% highlight objc %}
 UIViewAutoresizingFlexibleLeftMargin    00000001,
 UIViewAutoresizingFlexibleWidth         00000010,
 UIViewAutoresizingFlexibleRightMargin   00000100,

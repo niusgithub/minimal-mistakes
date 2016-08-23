@@ -42,7 +42,7 @@ tags:
 
 用来设置layer的背景颜色，注意使用UIColor时要用CGColor转换。
 
-{% highlight css %}
+{% highlight objc %}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor grayColor]];
@@ -59,7 +59,7 @@ tags:
 
 虽然contents这个属性的类型是id，但是要想在layer上显示一张图片的话需要赋值的类型为`CGImageRef`。CGImageRef是一个指向CGImage结构的指针，CGImageRef是一个Core  Foundation对象而不是Cocoa对象，而Core Foundation对象是不支持ARC的。
 
-{% highlight css %}
+{% highlight objc %}
 layer.contents = (__bridge_transfer id)image.CGImage;
 {% endhighlight %}
 

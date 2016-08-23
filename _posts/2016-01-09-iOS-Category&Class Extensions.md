@@ -16,7 +16,7 @@ Category用于在不修改类的代码的情况下向一个已经存在的类中
 
 Category在声明时必须import其所扩展的类的头文件（interface file），通常的category文件的命名习惯是用添加category的类的类名加上categroy的名字`SystemClass+CategoryName.h`。
 
-{% highlight css %}
+{% highlight objc %}
 #import "SystemClass.h"
 
 @interface SystemClass (CategoryName)
@@ -26,7 +26,7 @@ Category在声明时必须import其所扩展的类的头文件（interface file�
 
 如果是为私有类添加category，可以在类的@implementation块前直接声明。
 
-{% highlight css %}
+{% highlight objc %}
 #import "MyClass.h"
 
 @interface MyClass (PrivateMethods)
@@ -40,7 +40,7 @@ Category在声明时必须import其所扩展的类的头文件（interface file�
 
 通常的category的方法的实现在`SystemClass+CategoryName.m`中定义
 
-{% highlight css %}
+{% highlight objc %}
 #import "SystemClass+CategoryName.h"
 
 @implementation SystemClass ( CategoryName )
@@ -56,7 +56,7 @@ extension和category很像，但是和category不同的是`可以添加成员变
 
 extension的声明和category很像，由于圆括号中没有命名，所以extension通常也被称为匿名category。
 
-{% highlight css %}
+{% highlight objc %}
 @interface ClassName ()
 
 @end
@@ -64,7 +64,7 @@ extension的声明和category很像，由于圆括号中没有命名，所以ext
 
 extension可以添加成员变量。通常定义在extension中的属性和变量被视为private而在类的@interface中的则是public，可以通过这个特性来隐藏类的私有信息。
 
-{% highlight css %}
+{% highlight objc %}
 @interface XYZPerson ()
 @property NSObject *extraProperty;
 @end
