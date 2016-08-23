@@ -1,10 +1,10 @@
 ---
 title: "iOS--Core Animation(1)"
 tags: 
-- Core Animation 
-- CALayer 
-- ARC
-— Core Foundation
+  - Core Animation 
+  - CALayer 
+  - ARC
+  - Core Foundation
 ---
 
 {% include toc title="Core Animation学习笔记" icon="file-text" %}
