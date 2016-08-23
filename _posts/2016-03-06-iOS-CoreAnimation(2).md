@@ -7,7 +7,6 @@ tags:
 
 {% include toc title="Core Animation学习笔记" icon="file-text" %}
 
-
 # CALayer 属性
 
 ## contentsScale
@@ -15,9 +14,9 @@ tags:
 contentsSclae定义了contents的像素尺寸和视图比例的大小，其默认值为1.0。contentsScale的作用并不在于放大或缩小图层，这个属性属于支持高分辨率屏幕机制的一部分。它用来判断在绘制图层的时候应该为contents创建的空间的大小，和需要显示的图片的拉伸度(在未设置contentsGravity属性的情况下)。如果contentsScale设置为1.0，将会以每点1个像素绘制图片，如果为2.0，则会以每点2个像素绘制图片，即为Retina屏幕绘制。
 当用代码的方式来处理contents内的图片时，一定要设置contentsScale属性，以免图片在Retina屏幕上无法正确显示。
 
-{% highlight css %}
+```
 layer.contentsScale = [UIScreen mainScreen].scale;
-{% endhighlight %}
+```
 
 ## maskToBounds
 
@@ -39,7 +38,7 @@ contentsRect有一项叫做`image sprite`(图片拼合)的用法。图片拼合�
 
 ![Link]({{ site.url }}/images/CoreAnimation_2_1.png)
 
-{% highlight css %}
+```
 - (void)addSpriteImage:(UIImage *)image
        withContentRect:(CGRect)rect
                toLayer:(CALayer *)layer {
@@ -47,13 +46,13 @@ contentsRect有一项叫做`image sprite`(图片拼合)的用法。图片拼合�
     layer.contentsGravity = kCAGravityResizeAspect;
     layer.contentsRect = rect;
 }
-{% endhighlight %}
+```
 
-{% highlight css %}
+```
 [self addSpriteImage:image
      withContentRect:CGRectMake(0.5,0.5,0.5,0.5)
              toLayer:self.view.layer];
-{% endhighlight %}
+```
 
 ## contentsCenter
 
@@ -61,14 +60,8 @@ contentsCenter是一个CGRect，它定义了一个固定边框和一个在图层
 
 ![contentsCenter]({{ site.url }}/images/CoreAnimation_2_2.png)
 
-{% highlight css %}
+```
 layer.contentsCenter = rect;
-{% endhighlight %}
+```
 
 其效果和UIIamge的－resizableImageWithCapInset:的效果十分类似，UIImage的这个方法可以设置inset为图片最中间的1*1的那个区域，这样拉伸图片可用于UITabBar或UITableViewCell的背景图。其实还有个叫.9图片也是同样的原理，不过扯远了。
-
-
-
-
-
-
